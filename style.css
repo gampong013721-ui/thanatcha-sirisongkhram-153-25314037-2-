@@ -1764,3 +1764,82 @@ img {
     font-size:15px !important;
     padding:15px 0 !important;
 }
+/* ===== FINAL PROJECT LAYOUT FIX ===== */
+
+/* Project section */
+#body .section ul li{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:40px !important;
+}
+
+#body .section ul li > a{
+    flex:0 0 420px !important;
+    display:block !important;
+}
+
+#body .section ul li > a img{
+    width:420px !important;
+    height:260px !important;
+    object-fit:cover !important;
+    display:block !important;
+}
+
+#body .section ul li div{
+    flex:1 !important;
+    padding-left:20px !important;
+}
+
+#body .section ul li div h3{
+    font-size:42px !important;
+    line-height:1.2 !important;
+}
+
+#body .section ul li div p{
+    font-size:20px !important;
+    line-height:1.8 !important;
+    width:100% !important;
+}
+
+#body .section ul li div a.more{
+    display:inline-block !important;
+    width:180px !important;
+    height:auto !important;
+    padding:14px 0 !important;
+    text-align:center !important;
+    background:#5d1a57 !important;
+}
+/* ===== BLOG FIX ===== */
+
+#body .content ul li{
+    display:flex !important;
+    align-items:center !important;
+    gap:40px !important;
+}
+
+#body .content ul li > a{
+    flex:0 0 420px !important;
+}
+
+#body .content ul li > a img{
+    width:420px !important;
+    height:260px !important;
+    object-fit:cover !important;
+}
+
+#body .content ul li div{
+    flex:1 !important;
+}
+
+#body .content ul li div p{
+    width:100% !important;
+    line-height:1.8 !important;
+}
+
+#body .content ul li div a.more{
+    display:inline-block !important;
+    width:180px !important;
+    padding:14px 0 !important;
+    text-align:center !important;
+}
