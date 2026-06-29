@@ -1509,3 +1509,91 @@ img {
     padding: 10px;
     text-align: center;
 }
+.template-credit{
+    display:block;
+    width:900px;
+    margin:20px auto;
+    text-align:left;
+    color:#ffffff;
+    font-size:18px;
+}
+
+.template-credit a{
+    color:#ffd6ff;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.student-section{
+    width:900px;
+    margin:35px auto;
+    padding:35px;
+    background:rgba(0,0,0,.72);
+    border:2px solid rgba(255,255,255,.25);
+    border-radius:18px;
+    box-sizing:border-box;
+    overflow:hidden;
+    clear:both;
+}
+
+.student-section h2{
+    display:block !important;
+    position:static !important;
+    float:none !important;
+    width:100% !important;
+
+    margin:0 0 20px 0 !important;
+    padding:0 !important;
+
+    text-align:center !important;
+    font-size:48px !important;
+    line-height:1.2 !important;
+    color:#efd2ff !important;
+}
+
+.student-section p{
+    display:block !important;
+    position:static !important;
+    float:none !important;
+    width:100% !important;
+
+    margin:0 auto 20px auto !important;
+    padding:0 !important;
+
+    text-align:center !important;
+    font-size:22px !important;
+    line-height:1.8 !important;
+    color:#ffffff !important;
+}
+
+.student-section label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:10px;
+    text-align:center;
+    color:#ffffff;
+    font-size:20px;
+}
+
+.student-section input{
+    width:220px;
+    padding:10px;
+    font-size:18px;
+    border-radius:6px;
+    border:none;
+    text-align:center;
+}
+
+.student-section button{
+    padding:10px 22px;
+    margin-left:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#temperatureResult{
+    margin-top:18px !important;
+    font-size:22px !important;
+    font-weight:bold;
+    color:#ffe58f !important;
+}
