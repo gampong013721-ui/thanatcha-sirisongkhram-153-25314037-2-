@@ -1509,91 +1509,123 @@ img {
     padding: 10px;
     text-align: center;
 }
-.template-credit{
-    display:block;
-    width:900px;
-    margin:20px auto;
-    text-align:left;
-    color:#ffffff;
-    font-size:18px;
+
+
+/* =========================================================
+   FINAL FIX: make About This Website and JS box show fully
+   ========================================================= */
+
+/* Let the home top area grow instead of cutting boxes */
+#body.home,
+#body.home .header,
+#body.home .header div {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
 }
 
-.template-credit a{
-    color:#ffd6ff;
-    font-weight:bold;
-    text-decoration:underline;
+/* Make the custom credit and student boxes normal blocks */
+#body.home .header div .template-credit,
+#body.home .header div .student-section {
+    display: block !important;
+    float: none !important;
+    position: relative !important;
+    clear: both !important;
+    width: 86% !important;
+    max-width: 900px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    margin: 30px auto !important;
+    padding: 28px !important;
+    text-align: center !important;
+    background: rgba(0,0,0,0.78) !important;
+    border: 2px solid rgba(255,255,255,0.28) !important;
+    border-radius: 18px !important;
+    z-index: 80 !important;
 }
 
-.student-section{
-    width:900px;
-    margin:35px auto;
-    padding:35px;
-    background:rgba(0,0,0,.72);
-    border:2px solid rgba(255,255,255,.25);
-    border-radius:18px;
-    box-sizing:border-box;
-    overflow:hidden;
-    clear:both;
+/* Override the template h2 and p rules that were cutting the text */
+#body.home .header div .student-section h2 {
+    display: block !important;
+    float: none !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 0 18px 0 !important;
+    padding: 0 !important;
+    color: #f5d0fe !important;
+    font-size: 34px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
 }
 
-.student-section h2{
-    display:block !important;
-    position:static !important;
-    float:none !important;
-    width:100% !important;
-
-    margin:0 0 20px 0 !important;
-    padding:0 !important;
-
-    text-align:center !important;
-    font-size:48px !important;
-    line-height:1.2 !important;
-    color:#efd2ff !important;
+#body.home .header div .student-section p,
+#body.home .header div .student-section label {
+    display: block !important;
+    float: none !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 10px auto !important;
+    padding: 0 !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    text-align: center !important;
 }
 
-.student-section p{
-    display:block !important;
-    position:static !important;
-    float:none !important;
-    width:100% !important;
-
-    margin:0 auto 20px auto !important;
-    padding:0 !important;
-
-    text-align:center !important;
-    font-size:22px !important;
-    line-height:1.8 !important;
-    color:#ffffff !important;
+#body.home .header div .template-credit,
+#body.home .header div .template-credit a {
+    color: #ffffff !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    text-align: center !important;
 }
 
-.student-section label{
-    display:block;
-    margin-top:15px;
-    margin-bottom:10px;
-    text-align:center;
-    color:#ffffff;
-    font-size:20px;
+/* Input area */
+#body.home .header div .student-section input {
+    float: none !important;
+    display: inline-block !important;
+    width: 220px !important;
+    height: auto !important;
+    margin: 12px 8px !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    border: 2px solid #a855f7 !important;
 }
 
-.student-section input{
-    width:220px;
-    padding:10px;
-    font-size:18px;
-    border-radius:6px;
-    border:none;
-    text-align:center;
+#body.home .header div .student-section button {
+    float: none !important;
+    display: inline-block !important;
+    height: auto !important;
+    margin: 12px 8px !important;
+    padding: 11px 18px !important;
+    background: #a855f7 !important;
+    color: #ffffff !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
 }
 
-.student-section button{
-    padding:10px 22px;
-    margin-left:10px;
-    font-size:18px;
-    cursor:pointer;
+#temperatureResult {
+    display: block !important;
+    color: #ffe58f !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-align: center !important;
 }
 
-#temperatureResult{
-    margin-top:18px !important;
-    font-size:22px !important;
-    font-weight:bold;
-    color:#ffe58f !important;
+/* Keep featured topics below the boxes */
+#body.home .header div h3,
+#body.home .header div ul {
+    clear: both !important;
+    position: relative !important;
+    z-index: 70 !important;
 }
